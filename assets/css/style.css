@@ -1,27 +1,59 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  --user-photo-width: 150px;
 }
 
 body {
-    font-family: sans-serif;
-    line-height: 2;
+  font-family: sans-serif;
+  line-height: 2;
+}
+
+.UserImg {
+  width: var(--user-photo-width);
+  height: var(--user-photo-width);
+  object-fit: cover;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: calc((-1) * var(--user-photo-width) / 2);
+  border: 3px solid white;
+}
+
+.User_Card {
+  max-width: 400px;
+  width: 100%;
+  min-width: 300px;
+  margin: 50px auto;
+  border-radius: 25px;
+  box-shadow: 0px 0px 15px red;
+  overflow: hidden;
+  text-align: center;
 }
 
 .background {
-    background-image: url(./../images/Background.jpg) ;
-}
-
-img {
-    width: 250px;
-}
-
-.user-card {
-    width: 25%;
-    margin: 50px auto;
-    box-shadow: 0px `px 0px red;
+  background-image: url(./../images/Background.jpg);
+  height: 250px;
+  color: white;
+  padding: 15px;
+  text-align: right;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+.UserName {
+  font-size: 2rem;
+}
+
+.UserGeo,
+.UserExperience {
+  font-size: 1rem;
+}
+
+.UserJob {
+  font-size: 1.5rem;
 }
