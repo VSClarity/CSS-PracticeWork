@@ -8,7 +8,11 @@ html {
 
 body {
   font-family: sans-serif;
-  line-height: 2;
+  line-height: 1.3;
+}
+
+.Content_Wrapper {
+  padding: 0 1em 1em;
 }
 
 .UserImg {
@@ -47,13 +51,35 @@ a {
 
 .UserName {
   font-size: 2rem;
+  margin: 0.4em 0;
 }
 
-.UserGeo,
-.UserExperience {
+.UserGeo {
   font-size: 1rem;
+  margin: 0.5em 0;
 }
 
 .UserJob {
   font-size: 1.5rem;
+  margin: 0.4em 0;
+}
+
+.UserExperience {
+  font-size: 1rem;
+  margin: 1.2em 0;
+}
+
+.UserSocialLink {
+  color: white;
+  font-size: 1rem;
+  background-color: black;
+  border-radius: 50%;
+  padding-top: 10px;
+  width: 35px;
+  height: 35px;
+  margin: 5px;
+}
+
+.UserSocialLink + .UserSocialLink {
+  margin-left: 30px;
 }
